@@ -1,10 +1,23 @@
-import React from 'react'
+"use client";
+
+import React , {useState} from 'react'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link';
+
+import {Menu,  X } from "lucide-react"
 
 
 
 const Navbar = () => {
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    }
+
+
+
 
   return (
 
@@ -37,8 +50,45 @@ const Navbar = () => {
                         Get the Ebook
                     </Link>
                 </Button>
+                <Button variant="ghost" className="md:hidden" onClick={toggleMobileMenu}>
+                 <Menu className="h-6 w-6" />
+                </Button>
             </div>
       </header>
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-50 bg-background md:hidden">
+          <div className="container px-6 flex flex-col h-full">
+            <div className="flex justify-between items-center h-16">
+              <span className="text-2xl font-bold">ACM</span>
+              <Button variant="ghost" onClick={toggleMobileMenu}>
+                <X className="h-6 w-6" />
+              </Button>
+            </div>
+            <nav className="flex flex-col space-y-4 mt-8">
+              <Link href="#about" className="text-lg font-medium" onClick={toggleMobileMenu}>
+                About
+              </Link>
+              <Link href="#benefits" className="text-lg font-medium" onClick={toggleMobileMenu}>
+                Benefits
+              </Link>
+              <Link href="#how-it-works" className="text-lg font-medium" onClick={toggleMobileMenu}>
+                How It Works
+              </Link>
+              <Link href="#testimonials" className="text-lg font-medium" onClick={toggleMobileMenu}>
+                Testimonials
+              </Link>
+              <Link href="#faq" className="text-lg font-medium" onClick={toggleMobileMenu}>
+                FAQ
+              </Link>
+              <Button className="mt-4">
+                <Link href="https://selar.com/r6b69d">
+                    Buy Now
+                </Link>
+              </Button>
+            </nav>
+          </div>
+        </div>
+      )}
     </div>
 
 

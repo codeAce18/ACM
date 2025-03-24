@@ -14,7 +14,7 @@ const Footer = () => {
                 <p className="text-xs text-muted-foreground">
                     © {new Date().getFullYear()} Aggregator Construct Mastery. All rights reserved.
                 </p>
-                <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+                {/* <nav className="sm:ml-auto flex gap-4 sm:gap-6">
                     <Link href="#" className="text-xs hover:underline underline-offset-4">
                         Terms of Service
                     </Link>
@@ -24,7 +24,7 @@ const Footer = () => {
                     <Link href="#" className="text-xs hover:underline underline-offset-4">
                         Refund Policy
                     </Link>
-                </nav>
+                </nav> */}
             </div>
         </footer>
 
