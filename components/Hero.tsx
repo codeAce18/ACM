@@ -91,7 +91,7 @@ const Hero = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeIn}
               id="about" 
-              className="py-10 md:py-32"
+              className="py-10 md:py-10"
             >
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-8">
