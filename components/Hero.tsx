@@ -240,10 +240,10 @@ const Hero = () => {
                     >
                       <Card>
                         <CardHeader>
-                          <CardTitle className="text-center text-[16px]">{step.title}</CardTitle>
+                          <CardTitle className="text-left text-[16px] max-w-[200px]">{step.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <CardDescription className="text-center text-[16px]">
+                          <CardDescription className="text-left text-[16px] max-w-[500px]">
                             {step.description}
                           </CardDescription>
                         </CardContent>
