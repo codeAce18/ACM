@@ -52,7 +52,7 @@ const Hero = () => {
                     </video>
                     <div className="absolute inset-0 bg-black bg-opacity-60"></div>
                 </div>
-                <div className="container relative px-4 md:px-6 z-10">
+                <div className="container relative max-w-[1200px] mx-auto px-4 md:px-6 z-10">
                     <motion.div 
                       initial="hidden"
                       animate="visible"
@@ -75,7 +75,7 @@ const Hero = () => {
 
                           <button
                             // size="lg"
-                            className="bg-[#F26A21] text-white px-8 py-4 text-lg  rounded-lg font-semibold"
+                            className="bg-[#F26A21] text-white px-8 py-2.5 text-lg  rounded-lg font-semibold"
                           >
                             <Link href="https://selar.co/r6b69d">Get the Ebook</Link>
                           </button>
@@ -93,7 +93,7 @@ const Hero = () => {
               id="about" 
               className="py-10 md:py-10"
             >
-                <div className="container px-4 md:px-6">
+                <div className="container max-w-[1200px] mx-auto px-4 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         <motion.div 
                           variants={fadeIn}
@@ -113,13 +113,13 @@ const Hero = () => {
                           className="md:w-2/3"
                         >
                             <h2 className="text-3xl font-bold mb-4">About the Ebook</h2>
-                            <p className="lg:text-[14px] text-[15px] mb-4">
+                            <p className="text-[16px] mb-4">
                                 Imagine starting and growing your business by leveraging resources already in place, no need to reinvent the wheel. This ebook reveals precisely how to implement smarter, proven strategies to unlock massive growth, no matter where you are in the world. From the US and UK to Australia, Nigeria, and beyond, these strategies are designed to work globally.
                             </p>
-                            <p className="lg:text-[14px] text-[15px] mb-4">
+                            <p className="text-[16px] mb-4">
                                 In the Aggregator Construct Mastery ebook, you&apos;ll gain a deep understanding of the Aggregator Construct Business Model. This ebook delves into the key components, strategies, and methodologies used by successful aggregator businesses such as Uber, Swiggy, Airbnb, Amazon, NerdWallet, and Netflix. You&apos;ll learn how to understand market dynamics and create scalable platforms that grow with you.
                             </p>
-                            <p className="tlg:text-[14px] text-[15px] mb-4">
+                            <p className="text-[16px] mb-4">
                                 Covering the full journey of building and managing an aggregator business, this ebook equips you with the knowledge and strategies to potentially scale your business by 40x annually. Don&apos;t miss this opportunity, take your business to the next level with Aggregator Construct Mastery ebook today!
                             </p>
                         </motion.div>
@@ -136,7 +136,7 @@ const Hero = () => {
               id="benefits" 
               className="py-20 md:py-32 bg-muted"
             >
-              <div className="container px-4 md:px-6">
+              <div className="container max-w-[1200px] mx-auto px-4 md:px-6">
                 <motion.h2 
                   variants={fadeIn}
                   className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12"
@@ -170,13 +170,13 @@ const Hero = () => {
                     >
                       <Card>
                         <CardHeader>
-                          <CardTitle className="flex items-center lg:text-[14.5px] text-[15.5px] tracking-wide">
+                          <CardTitle className="flex items-center text-[16px] tracking-wide">
                             <CheckCircle className="mr-2 h-5 w-5 text-primary" />
                             {feature}
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <CardDescription className='lg:text-[14px] text-[15px]'>
+                          <CardDescription className='text-[16px]'>
                             Learn the ins and outs of {feature.toLowerCase()} and how to apply them to your aggregator project.
                           </CardDescription>
                         </CardContent>
@@ -196,7 +196,7 @@ const Hero = () => {
               id="how-it-works" 
               className="py-20 md:py-32"
             >
-              <div className="container px-4 md:px-6">
+              <div className="container max-w-[1200px] mx-auto px-4 md:px-6">
                 <motion.h2 
                   variants={fadeIn}
                   className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12"
@@ -243,7 +243,7 @@ const Hero = () => {
                           <CardTitle className="text-center text-[16px]">{step.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <CardDescription className="text-center text-[15px]">
+                          <CardDescription className="text-center text-[16px]">
                             {step.description}
                           </CardDescription>
                         </CardContent>
@@ -263,7 +263,7 @@ const Hero = () => {
               id="testimonials" 
               className="py-20 md:py-32 bg-muted"
             >
-              <div className="container px-4 md:px-6">
+              <div className="container max-w-[1200px] mx-auto px-4 md:px-6">
                 <motion.h2 
                   variants={fadeIn}
                   className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12"
@@ -315,7 +315,7 @@ const Hero = () => {
                           <CardDescription>{testimonial.role}</CardDescription>
                         </CardHeader>
                         <CardContent>
-                          <p className="text-muted-foreground">&apos;{testimonial.content}&apos;</p>
+                          <p className="text-muted-foreground text-[16px]">&apos;{testimonial.content}&apos;</p>
                           <div className="flex mt-2">
                             {[...Array(5)].map((_, i) => (
                               <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
@@ -338,7 +338,7 @@ const Hero = () => {
               id="faq" 
               className="py-20 md:py-32 bg-muted"
             >
-              <div className="container px-4 md:px-6">
+              <div className="container max-w-[1200px] mx-auto px-4 md:px-6">
                 <motion.h2 
                   variants={fadeIn}
                   className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12"
@@ -398,7 +398,7 @@ const Hero = () => {
               variants={fadeIn}
               className="py-20 md:py-32 bg-primary text-primary-foreground"
             >
-              <div className="container px-4 md:px-6">
+              <div className="container max-w-[1200px] mx-auto px-4 md:px-6">
                 <div className="flex flex-col items-center space-y-4 text-center">
                   <motion.h2 
                     variants={fadeIn}
@@ -418,7 +418,7 @@ const Hero = () => {
                     variants={fadeIn}
                     transition={{ delay: 0.2 }}
                   >
-                    <button  className="bg-[#F26A21] text-white px-6 py-4 rounded-lg font-semibold">
+                    <button  className="bg-[#F26A21] text-white px-8 py-2.5 rounded-lg font-semibold">
                       <Link href="https://selar.co/r6b69d ">
                         Get the Ebook Now
                       </Link>

@@ -23,7 +23,7 @@ const Navbar = () => {
 
     <div className='px-10'>
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container flex h-16 items-center justify-between">
+            <div className="container max-w-screen-xl mx-auto flex h-16 items-center justify-between">
                 <Link href="/" className="flex items-center space-x-2">
                     <span className="text-2xl font-bold">ACM</span>
                 </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </Link>
                 </nav>
                     
-                <button className="hidden md:inline-flex bg-[#F26A21] text-white px-6 py-2 rounded-lg font-semibold">
+                <button className="hidden md:inline-flex bg-[#F26A21] text-white px-8 py-2.5  rounded-lg font-semibold">
                   <Link href="https://selar.co/r6b69d">
                     Get the Ebook
                   </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
               <Link href="#faq" className="text-lg font-medium" onClick={toggleMobileMenu}>
                 FAQ
               </Link>
-              <button className="mt-4 bg-[#F26A21] text-white font-semibold py-2 rounded-lg">
+              <button className="mt-4 bg-[#F26A21] text-white font-semibold px-8 py-2.5 rounded-lg">
                 <Link href="https://selar.com/r6b69d">
                     Buy Now
                 </Link>
