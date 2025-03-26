@@ -45,11 +45,11 @@ const Navbar = () => {
                     </Link>
                 </nav>
                     
-                <Button className="hidden md:inline-flex">
-                    <Link href="https://selar.co/r6b69d">
-                        Get the Ebook
-                    </Link>
-                </Button>
+                <button className="hidden md:inline-flex bg-[#F26A21] text-white px-6 py-2 rounded-lg font-semibold">
+                  <Link href="https://selar.co/r6b69d">
+                    Get the Ebook
+                  </Link>
+                </button>
                 <Button variant="ghost" className="md:hidden" onClick={toggleMobileMenu}>
                  <Menu className="h-6 w-6" />
                 </Button>
@@ -80,11 +80,11 @@ const Navbar = () => {
               <Link href="#faq" className="text-lg font-medium" onClick={toggleMobileMenu}>
                 FAQ
               </Link>
-              <Button className="mt-4">
+              <button className="mt-4 bg-[#F26A21] text-white font-semibold py-2 rounded-lg">
                 <Link href="https://selar.com/r6b69d">
                     Buy Now
                 </Link>
-              </Button>
+              </button>
             </nav>
           </div>
         </div>

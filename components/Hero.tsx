@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import { CheckCircle, Star } from "lucide-react"
 import { motion } from "framer-motion"
@@ -72,11 +72,13 @@ const Hero = () => {
                           variants={fadeIn}
                           transition={{ delay: 0.4 }}
                         >
-                          <Button size="lg" className="bg-primary text-primary-foreground">
-                              <Link href="https://selar.co/r6b69d">
-                                  Get the Ebook
-                              </Link>
-                          </Button>
+
+                          <button
+                            // size="lg"
+                            className="bg-[#F26A21] text-white px-8 py-4 text-lg  rounded-lg font-semibold"
+                          >
+                            <Link href="https://selar.co/r6b69d">Get the Ebook</Link>
+                          </button>
                         </motion.div>
                     </motion.div>
                 </div>
@@ -89,7 +91,7 @@ const Hero = () => {
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeIn}
               id="about" 
-              className="py-20 md:py-32"
+              className="py-10 md:py-32"
             >
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-8">
@@ -111,13 +113,13 @@ const Hero = () => {
                           className="md:w-2/3"
                         >
                             <h2 className="text-3xl font-bold mb-4">About the Ebook</h2>
-                            <p className="text-lg mb-4">
+                            <p className="lg:text-[14px] text-[15px] mb-4">
                                 Imagine starting and growing your business by leveraging resources already in place, no need to reinvent the wheel. This ebook reveals precisely how to implement smarter, proven strategies to unlock massive growth, no matter where you are in the world. From the US and UK to Australia, Nigeria, and beyond, these strategies are designed to work globally.
                             </p>
-                            <p className="text-lg mb-4">
+                            <p className="lg:text-[14px] text-[15px] mb-4">
                                 In the Aggregator Construct Mastery ebook, you&apos;ll gain a deep understanding of the Aggregator Construct Business Model. This ebook delves into the key components, strategies, and methodologies used by successful aggregator businesses such as Uber, Swiggy, Airbnb, Amazon, NerdWallet, and Netflix. You&apos;ll learn how to understand market dynamics and create scalable platforms that grow with you.
                             </p>
-                            <p className="text-lg mb-4">
+                            <p className="tlg:text-[14px] text-[15px] mb-4">
                                 Covering the full journey of building and managing an aggregator business, this ebook equips you with the knowledge and strategies to potentially scale your business by 40x annually. Don&apos;t miss this opportunity, take your business to the next level with Aggregator Construct Mastery ebook today!
                             </p>
                         </motion.div>
@@ -416,11 +418,11 @@ const Hero = () => {
                     variants={fadeIn}
                     transition={{ delay: 0.2 }}
                   >
-                    <Button size="lg" className="bg-background text-primary hover:bg-background/90">
+                    <button  className="bg-[#F26A21] text-white px-6 py-4 rounded-lg font-semibold">
                       <Link href="https://selar.co/r6b69d ">
-                          Get the Ebook Now
+                        Get the Ebook Now
                       </Link>
-                    </Button>
+                    </button>
                   </motion.div>
                 </div>
               </div>

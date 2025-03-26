@@ -2,7 +2,7 @@ import React from 'react'
 
 import Link from 'next/link';
 
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 
 const Footer = () => {
 
@@ -30,13 +30,13 @@ const Footer = () => {
 
         {/* Floating "Get the Ebook" button for mobile */}
         <div className="fixed bottom-4 right-4 md:hidden z-50">
-            <Button size="lg" className="bg-primary text-primary-foreground shadow-lg">
+            <button className="bg-[#F26A21] text-white px-4 py-2 font-semibold rounded-lg">
 
 
                 <Link href="https://selar.co/r6b69d">
                     Get the Ebook
                 </Link>
-            </Button>
+            </button>
         </div>
 
     </div>
