@@ -350,38 +350,38 @@ const Hero = () => {
                 >
                   <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger>What is an Aggregator Business Model?</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className='text-[16px] font-semibold'>What is an Aggregator Business Model?</AccordionTrigger>
+                      <AccordionContent className='text-[16px] font-normal'>
                         An Aggregator Business Model is a strategy where a company collects information about multiple service providers in a specific niche and presents it to customers in a unified platform. This model creates value by reducing search costs for customers and providing a streamlined experience.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger>How can this ebook help me grow my business?</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className='text-[16px] font-semibold'>How can this ebook help me grow my business?</AccordionTrigger>
+                      <AccordionContent className='text-[16px] font-normal'>
                         This ebook provides a comprehensive guide on implementing and scaling an Aggregator Business Model. It covers strategies for data collection, API integration, user experience design, and monetization. By following these strategies, you can potentially achieve rapid growth similar to successful aggregator businesses like Airbnb, Uber, and Amazon.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
-                      <AccordionTrigger>Is this ebook suitable for beginners?</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className='text-[16px] font-semibold'>Is this ebook suitable for beginners?</AccordionTrigger>
+                      <AccordionContent className='text-[16px] font-normal'>
                         Yes, this ebook is designed for both beginners and experienced entrepreneurs. It starts with the basics of the Aggregator Business Model and progressively covers more advanced topics. Whether you&apos;re just starting out or looking to scale your existing aggregator business, you&apos;ll find valuable insights and strategies.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4">
-                      <AccordionTrigger>How long does it take to implement an Aggregator Business Model?</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className='text-[16px] font-semibold'>How long does it take to implement an Aggregator Business Model?</AccordionTrigger>
+                      <AccordionContent className='text-[16px] font-normal'>
                         The implementation time can vary depending on the complexity of your project and your team&apos;s expertise. However, with the strategies outlined in this ebook, you can potentially launch a basic aggregator platform within 3-6 months. Scaling and refining your model may take additional time, but the ebook provides guidance for each stage of development.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-5">
-                      <AccordionTrigger>Can I apply the Aggregator Model to any industry?</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className='text-[16px] font-semibold'>Can I apply the Aggregator Model to any industry?</AccordionTrigger>
+                      <AccordionContent className='text-[16px] font-normal'>
                         While the Aggregator Business Model has proven successful in many industries, its applicability can vary. The ebook covers a wide range of sectors where this model has thrived, including transportation, hospitality, e-commerce, and more. It also provides guidelines to help you assess whether your chosen industry is suitable for an aggregator approach.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-6">
-                      <AccordionTrigger>Do I need technical skills to implement the strategies in this ebook?</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className='text-[16px] font-semibold'>Do I need technical skills to implement the strategies in this ebook?</AccordionTrigger>
+                      <AccordionContent className='text-[16px] font-normal'>
                         While some technical knowledge is beneficial, it&apos;s not a prerequisite. The ebook is designed to be accessible to both technical and non-technical readers. It provides high-level strategies as well as technical insights, allowing you to understand the concepts even if you plan to work with a development team. For those with technical skills, the ebook includes code examples and architectural guidance.
                       </AccordionContent>
                     </AccordionItem>
